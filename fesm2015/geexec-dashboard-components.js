@@ -1,4 +1,4 @@
-import { ɵɵdefineInjectable, ɵsetClassMetadata, Injectable, ɵɵdefineComponent, ɵɵelementStart, ɵɵtext, ɵɵelementEnd, Component, ɵɵdefineNgModule, ɵɵdefineInjector, ɵɵsetNgModuleScope, NgModule } from '@angular/core';
+import { ɵɵdefineInjectable, ɵsetClassMetadata, Injectable, ɵɵdefineComponent, ɵɵelementStart, ɵɵtext, ɵɵelementEnd, Component, ɵɵprojectionDef, ɵɵprojection, ɵɵdefineNgModule, ɵɵdefineInjector, ɵɵsetNgModuleScope, NgModule } from '@angular/core';
 
 class GeexecDashboardComponentsService {
     constructor() { }
@@ -36,15 +36,17 @@ GeexecDashboardComponentsComponent.ɵcmp = ɵɵdefineComponent({ type: GeexecDas
             }]
     }], function () { return []; }, null); })();
 
+const _c0 = ["*"];
 class GxHeadingComponent {
     constructor() { }
     ngOnInit() {
     }
 }
 GxHeadingComponent.ɵfac = function GxHeadingComponent_Factory(t) { return new (t || GxHeadingComponent)(); };
-GxHeadingComponent.ɵcmp = ɵɵdefineComponent({ type: GxHeadingComponent, selectors: [["gx-heading"]], decls: 2, vars: 0, template: function GxHeadingComponent_Template(rf, ctx) { if (rf & 1) {
+GxHeadingComponent.ɵcmp = ɵɵdefineComponent({ type: GxHeadingComponent, selectors: [["gx-heading"]], ngContentSelectors: _c0, decls: 2, vars: 0, template: function GxHeadingComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵɵprojectionDef();
         ɵɵelementStart(0, "p");
-        ɵɵtext(1, "gx-heading works!");
+        ɵɵprojection(1);
         ɵɵelementEnd();
     } }, styles: [""] });
 /*@__PURE__*/ (function () { ɵsetClassMetadata(GxHeadingComponent, [{
@@ -56,15 +58,35 @@ GxHeadingComponent.ɵcmp = ɵɵdefineComponent({ type: GxHeadingComponent, selec
             }]
     }], function () { return []; }, null); })();
 
+class GxInputComponent {
+    constructor() { }
+    ngOnInit() {
+    }
+}
+GxInputComponent.ɵfac = function GxInputComponent_Factory(t) { return new (t || GxInputComponent)(); };
+GxInputComponent.ɵcmp = ɵɵdefineComponent({ type: GxInputComponent, selectors: [["gx-input"]], decls: 2, vars: 0, template: function GxInputComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵɵelementStart(0, "p");
+        ɵɵtext(1, "gx-input works!");
+        ɵɵelementEnd();
+    } }, styles: [""] });
+/*@__PURE__*/ (function () { ɵsetClassMetadata(GxInputComponent, [{
+        type: Component,
+        args: [{
+                selector: 'gx-input',
+                templateUrl: './gx-input.component.html',
+                styleUrls: ['./gx-input.component.css']
+            }]
+    }], function () { return []; }, null); })();
+
 class GeexecDashboardComponentsModule {
 }
 GeexecDashboardComponentsModule.ɵmod = ɵɵdefineNgModule({ type: GeexecDashboardComponentsModule });
 GeexecDashboardComponentsModule.ɵinj = ɵɵdefineInjector({ factory: function GeexecDashboardComponentsModule_Factory(t) { return new (t || GeexecDashboardComponentsModule)(); }, imports: [[]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(GeexecDashboardComponentsModule, { declarations: [GeexecDashboardComponentsComponent, GxHeadingComponent], exports: [GeexecDashboardComponentsComponent, GxHeadingComponent] }); })();
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(GeexecDashboardComponentsModule, { declarations: [GeexecDashboardComponentsComponent, GxHeadingComponent, GxInputComponent], exports: [GeexecDashboardComponentsComponent, GxHeadingComponent] }); })();
 /*@__PURE__*/ (function () { ɵsetClassMetadata(GeexecDashboardComponentsModule, [{
         type: NgModule,
         args: [{
-                declarations: [GeexecDashboardComponentsComponent, GxHeadingComponent],
+                declarations: [GeexecDashboardComponentsComponent, GxHeadingComponent, GxInputComponent],
                 imports: [],
                 exports: [GeexecDashboardComponentsComponent, GxHeadingComponent]
             }]
@@ -78,5 +100,5 @@ GeexecDashboardComponentsModule.ɵinj = ɵɵdefineInjector({ factory: function G
  * Generated bundle index. Do not edit.
  */
 
-export { GeexecDashboardComponentsComponent, GeexecDashboardComponentsModule, GeexecDashboardComponentsService, GxHeadingComponent };
+export { GeexecDashboardComponentsComponent, GeexecDashboardComponentsModule, GeexecDashboardComponentsService, GxHeadingComponent, GxInputComponent };
 //# sourceMappingURL=geexec-dashboard-components.js.map

@@ -46,6 +46,7 @@
             }], function () { return []; }, null);
     })();
 
+    var _c0 = ["*"];
     var GxHeadingComponent = /** @class */ (function () {
         function GxHeadingComponent() {
         }
@@ -54,10 +55,11 @@
         return GxHeadingComponent;
     }());
     GxHeadingComponent.ɵfac = function GxHeadingComponent_Factory(t) { return new (t || GxHeadingComponent)(); };
-    GxHeadingComponent.ɵcmp = i0.ɵɵdefineComponent({ type: GxHeadingComponent, selectors: [["gx-heading"]], decls: 2, vars: 0, template: function GxHeadingComponent_Template(rf, ctx) {
+    GxHeadingComponent.ɵcmp = i0.ɵɵdefineComponent({ type: GxHeadingComponent, selectors: [["gx-heading"]], ngContentSelectors: _c0, decls: 2, vars: 0, template: function GxHeadingComponent_Template(rf, ctx) {
             if (rf & 1) {
+                i0.ɵɵprojectionDef();
                 i0.ɵɵelementStart(0, "p");
-                i0.ɵɵtext(1, "gx-heading works!");
+                i0.ɵɵprojection(1);
                 i0.ɵɵelementEnd();
             }
         }, styles: [""] });
@@ -72,6 +74,32 @@
             }], function () { return []; }, null);
     })();
 
+    var GxInputComponent = /** @class */ (function () {
+        function GxInputComponent() {
+        }
+        GxInputComponent.prototype.ngOnInit = function () {
+        };
+        return GxInputComponent;
+    }());
+    GxInputComponent.ɵfac = function GxInputComponent_Factory(t) { return new (t || GxInputComponent)(); };
+    GxInputComponent.ɵcmp = i0.ɵɵdefineComponent({ type: GxInputComponent, selectors: [["gx-input"]], decls: 2, vars: 0, template: function GxInputComponent_Template(rf, ctx) {
+            if (rf & 1) {
+                i0.ɵɵelementStart(0, "p");
+                i0.ɵɵtext(1, "gx-input works!");
+                i0.ɵɵelementEnd();
+            }
+        }, styles: [""] });
+    /*@__PURE__*/ (function () {
+        i0.ɵsetClassMetadata(GxInputComponent, [{
+                type: i0.Component,
+                args: [{
+                        selector: 'gx-input',
+                        templateUrl: './gx-input.component.html',
+                        styleUrls: ['./gx-input.component.css']
+                    }]
+            }], function () { return []; }, null);
+    })();
+
     var GeexecDashboardComponentsModule = /** @class */ (function () {
         function GeexecDashboardComponentsModule() {
         }
@@ -79,12 +107,12 @@
     }());
     GeexecDashboardComponentsModule.ɵmod = i0.ɵɵdefineNgModule({ type: GeexecDashboardComponentsModule });
     GeexecDashboardComponentsModule.ɵinj = i0.ɵɵdefineInjector({ factory: function GeexecDashboardComponentsModule_Factory(t) { return new (t || GeexecDashboardComponentsModule)(); }, imports: [[]] });
-    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && i0.ɵɵsetNgModuleScope(GeexecDashboardComponentsModule, { declarations: [GeexecDashboardComponentsComponent, GxHeadingComponent], exports: [GeexecDashboardComponentsComponent, GxHeadingComponent] }); })();
+    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && i0.ɵɵsetNgModuleScope(GeexecDashboardComponentsModule, { declarations: [GeexecDashboardComponentsComponent, GxHeadingComponent, GxInputComponent], exports: [GeexecDashboardComponentsComponent, GxHeadingComponent] }); })();
     /*@__PURE__*/ (function () {
         i0.ɵsetClassMetadata(GeexecDashboardComponentsModule, [{
                 type: i0.NgModule,
                 args: [{
-                        declarations: [GeexecDashboardComponentsComponent, GxHeadingComponent],
+                        declarations: [GeexecDashboardComponentsComponent, GxHeadingComponent, GxInputComponent],
                         imports: [],
                         exports: [GeexecDashboardComponentsComponent, GxHeadingComponent]
                     }]
@@ -103,6 +131,7 @@
     exports.GeexecDashboardComponentsModule = GeexecDashboardComponentsModule;
     exports.GeexecDashboardComponentsService = GeexecDashboardComponentsService;
     exports.GxHeadingComponent = GxHeadingComponent;
+    exports.GxInputComponent = GxInputComponent;
 
     Object.defineProperty(exports, '__esModule', { value: true });
 
